@@ -2,7 +2,7 @@
 <%@page import="jspproject1.Messager"%>
 <%@page import="jspproject1.Message"%>
 <%
-    Messager messager = new Messager("Budi");
+    Messager messager = new Messager("Arjun");
     
     if(request.getParameter("pengirim")!=null) {
         messager.addMessage(request.getParameter("pengirim"), request.getParameter("pesan"));
@@ -12,7 +12,7 @@
 
     request.setAttribute("list", list);
     
-    RequestDispatcher dispatcher = request.getRequestDispatcher("budi.messageboard.view.jsp");
+    RequestDispatcher dispatcher = request.getRequestDispatcher("arjun.messageboard.view.jsp");
     dispatcher.forward(request, response);
 
 %>
